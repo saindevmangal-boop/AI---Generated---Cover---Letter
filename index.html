@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cover Letter Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <h1>AI Cover Letter Builder</h1>
+      <p>Enter your details and generate a polished cover letter instantly.</p>
+    </section>
+
+    <section class="panel">
+      <form id="coverLetterForm" class="form-grid">
+        <label>
+          Candidate Name
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+        </label>
+
+        <label>
+          Job Role
+          <input type="text" id="role" name="role" placeholder="Product Manager" required />
+        </label>
+
+        <label>
+          Target Company
+          <input type="text" id="company" name="company" placeholder="Example Corp" required />
+        </label>
+
+        <label>
+          Key Skills
+          <input type="text" id="skills" name="skills" placeholder="Leadership, Data Analysis, UX" required />
+        </label>
+
+        <button type="submit" class="btn btn-primary">Generate Letter</button>
+      </form>
+
+      <div class="result-panel">
+        <div class="result-header">
+          <h2>Generated Cover Letter</h2>
+          <button id="copyButton" class="btn btn-secondary" type="button">Copy to Clipboard</button>
+        </div>
+        <div id="resultContainer" class="result-output">
+          <p class="empty-state">Your cover letter will appear here after you generate it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
